@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Hello World!</title>
+        <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
+        <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';">
+        <link href="bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body class="bg-light">
+        <nav class="navbar navbar-light bg-light justify-content-between">
+            <a class="navbar-brand">Mordhau</a>
+            <div>
+                <label id="stop" type="button" class="btn btn-secondary">Stop</label>
+                <label id="refresh" type="button" class="btn btn-primary">Refresh</label>
+            </div>
+        </nav>
+        <div id="error" class="alert alert-danger" style="display: none"></div>
+        <table class="table table-dark" style="display: none">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Players</th>
+                    <th>Map</th>
+                    <th>Ping</th>
+                </tr>
+            </thead>
+            <tbody id="server-table"></tbody>
+        </table>
+    <script src="app.js"></script>
+  </body>
+</html>
